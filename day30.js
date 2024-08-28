@@ -52,17 +52,17 @@ console.log(numberToWords(8)); // Output: Eight
 // typescript
 // function sumOfNaturalNumbers(n: number): number {
 //   // Your code here
-// }
-function sumOfNaturalNumbers(n) {
+//}
+function sumOfNaturalNumbers(n: number): number {
     return (n * (n + 1)) / 2;
 }
 console.log(sumOfNaturalNumbers(5)); // Output: 1 + 2 + 3 + 4 + 5 = 15
 console.log(sumOfNaturalNumbers(13)); //Output: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12 + 13 = 91.
 // Or we can solve this question with for loop:
-function sumOfNaturalnumbers(n) {
-    var sum = 0;
+function sumOfNaturalnumbers(n: number): number {
+    let sum = 0;
     // Adding each number from 1 to n
-    for (var i = 1; i <= n; i++) {
+    for (let i = 1; i <= n; i++) {
         sum += i;
     }
     return sum;
